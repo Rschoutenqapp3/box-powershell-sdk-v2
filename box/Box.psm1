@@ -12,7 +12,7 @@ function New-BoxGroup($token, $name)
 
     $json = '{"name": "' + $name + '"}'
     
-    $return = Invoke-RestMethod -Uri $uri -Method Post -Headers $headers -Body $json -ContentType "applicaiton/json"
+    $return = Invoke-RestMethod -Uri $uri -Method Post -Headers $headers -Body $json -ContentType "application/json"
 
     return $return.id
 }
